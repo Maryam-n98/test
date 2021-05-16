@@ -3,7 +3,13 @@ import React from 'react';
 class App extends React.Component{
   render(){
     return(
-      <h1> hhi</h1>
+     <div>
+      <header/>
+      <HornedBeast1/>
+      <HornedBeast2/>
+      <HornedBeast3/>
+      <Footer/>
+     </div>
     )
   }
 }
