@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Main2 extends React.Component{
+class HornedBeast2 extends React.Component{
     render(){
         return(
             <div>
@@ -10,8 +10,10 @@ class Main2 extends React.Component{
 
                 <img src="https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80" />
                 <p>
-                Mother (or father) rhino with two babies                </p>
+                Mother (or father) rhino with two babies 
+                 </p>
             </div>
         )
     }
 } 
+export default HornedBeast2;
