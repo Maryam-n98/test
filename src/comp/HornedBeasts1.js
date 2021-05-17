@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Main1 extends React.Component{
+class HornedBeast1 extends React.Component{
     render(){
         return(
             <div>
@@ -16,3 +16,4 @@ class Main1 extends React.Component{
         )
     }
 } 
+export default HornedBeast1;
