@@ -1,18 +1,36 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+
 
 class HornedBeast1 extends React.Component{
+
+    constructor(props) {
+        super(props);
+        this.state = {
+          numberOfVote: 0,
+        }
+      }
+    
+      increaseVotes = () => {
+        this.setState({
+          numberOfPets: this.state.numberOfVote + 1,
+        })
+      }
     render(){
         return(
-            <div>
-                <h2>
-                UniWhal
-                </h2>
-
-                <img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg" />
-                <p>
-                A unicorn and a narwhal nuzzling their horns
-                </p>
-            </div>
+            <div className='honers'>
+               
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src={this.props.img-Url} />
+          <Card.Body>
+            <Card.Title>{this.props.catName}</Card.Title>
+            <Card.Text>
+            💜 favorited : {this.state.numberOfVote}
+            </Card.Text>
+          </Card.Body>
+          <Button onClick={this.increaseVotes}  variant="primary">Choose It</Button>
+        </Card>
+      </div>
         )
     }
 } 
